@@ -1,24 +1,29 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
-import { AppComponent } from './app.component';
-import { UserSettingsFormComponent } from './user-settings-form/user-settings-form.component';
-import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { AppComponent } from "./app.component";
+import { UserSettingsFormComponent } from "./user-settings-form/user-settings-form.component";
+import { ButtonsModule } from "ngx-bootstrap/buttons";
+import { TimepickerModule } from "ngx-bootstrap/timepicker";
+import {BsDatepickerModule} from "ngx-bootstrap/datepicker";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    UserSettingsFormComponent
-  ],
+  declarations: [AppComponent, UserSettingsFormComponent],
+
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    ButtonsModule.forRoot()
+    BrowserAnimationsModule,
+    ButtonsModule.forRoot(),
+    TimepickerModule.forRoot(),
+    BsDatepickerModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent]
+
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
