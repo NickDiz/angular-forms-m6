@@ -9,6 +9,7 @@ import { ButtonsModule } from "ngx-bootstrap/buttons";
 import { TimepickerModule } from "ngx-bootstrap/timepicker";
 import {BsDatepickerModule} from "ngx-bootstrap/datepicker";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {RatingModule} from "ngx-bootstrap/rating";
 
 @NgModule({
   declarations: [AppComponent, UserSettingsFormComponent],
@@ -20,7 +21,8 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     BrowserAnimationsModule,
     ButtonsModule.forRoot(),
     TimepickerModule.forRoot(),
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    RatingModule.forRoot()
   ],
   providers: [],
 

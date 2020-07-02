@@ -24,6 +24,10 @@ export class UserSettingsFormComponent implements OnInit {
   subscriptionTypes: Observable<string[]>;
   singleModel: any = "On";
   startDate: Date;
+  startTime: Date;
+  userRating: any;
+  maxRating = 12;
+  isReadonly: false;
 
   constructor(private dataService: DataService) {}
 
